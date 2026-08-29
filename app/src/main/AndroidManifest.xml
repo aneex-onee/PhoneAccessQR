@@ -12,6 +12,9 @@
 
     <!-- Screen Capture Permissions -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
 
     <!-- Storage Permissions -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -59,12 +62,14 @@
         <!-- Socket Service for Network Communication -->
         <service
             android:name=".services.SocketService"
-            android:exported="false" />
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
 
         <!-- Screen Capture Service -->
         <service
             android:name=".services.ScreenCaptureService"
-            android:exported="false" />
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
 
         <!-- Accessibility Service for Enhanced Control -->
         <service

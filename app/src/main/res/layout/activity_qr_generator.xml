@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/qr_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/device_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Device Name"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/ip_address_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP Address"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/port_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Port Number"
+        android:inputType="number"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/generate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/qr_code_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Generated QR Code" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save QR Code"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share QR Code" />
+
+</LinearLayout>
